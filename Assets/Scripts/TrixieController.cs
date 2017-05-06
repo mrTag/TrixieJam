@@ -16,6 +16,7 @@ public class TrixieController : MonoBehaviour {
 	public Vector3 VertMovementAxis = new Vector3(0,0,1);
 	public float MaxSpeed;
 	public float GroundCheckDist = 2.5f;
+	public float JumpImpulse = 1000;
 
 	private bool onGround = false;
 	public bool OnGround { get { return onGround; } }
@@ -23,6 +24,7 @@ public class TrixieController : MonoBehaviour {
 	private Rigidbody TrixieBody;
 	private string HorizontalInputAxis;
 	private string VerticalInputAxis;
+	private string JumpButton;
 
 	// Use this for initialization
 	void Start () {
@@ -30,10 +32,12 @@ public class TrixieController : MonoBehaviour {
 		if(ControlsBodyPart == TrixiePart.Front){
 			HorizontalInputAxis = "HorizontalFront";
 			VerticalInputAxis = "VerticalFront";
+			JumpButton = "JumpFront";
 		}
 		else {
 			HorizontalInputAxis = "HorizontalBack";
 			VerticalInputAxis = "VerticalBack";
+			JumpButton = "JumpBack";
 		}
 		HorizMovementAxis.Normalize();
 		VertMovementAxis.Normalize();
@@ -41,7 +45,6 @@ public class TrixieController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		Debug.DrawLine(transform.position, transform.position - transform.up * GroundCheckDist, Color.yellow, 0, false);
 		onGround = Physics.Raycast(transform.position, -transform.up, GroundCheckDist);
 
 		Vector2 input = new Vector2(
@@ -49,18 +52,26 @@ public class TrixieController : MonoBehaviour {
 			Input.GetAxis(VerticalInputAxis)
 		);
 
-		if(!onGround) input = Vector2.zero;
+		if(!onGround) input *= 0.33333f;
 
 		if(input.sqrMagnitude > 0){
 			Vector3 worldForce = (input.x * HorizMovementAxis) + (input.y * VertMovementAxis);
-			worldForce.Normalize();
+			float movementLen = worldForce.magnitude;
+			worldForce /= movementLen;
 			float currentSpeedInMovementDir = Vector3.Dot(worldForce, TrixieBody.velocity);
-			worldForce *= MovementForce * (1 - Mathf.InverseLerp(0, MaxSpeed, currentSpeedInMovementDir));
+			worldForce *= MovementForce * (1 - Mathf.InverseLerp(0, MaxSpeed*movementLen, currentSpeedInMovementDir));
 			TrixieBody.AddForce(worldForce * Time.fixedDeltaTime, ForceMode.Force);
 			TrixieBody.drag = 0.5f;
 		}
 		else {
-			TrixieBody.drag = 5;
+			if(onGround)
+				TrixieBody.drag = 5;
+			else
+				TrixieBody.drag = 0.1f;
+		}
+
+		if(onGround && Input.GetButtonDown(JumpButton)){
+			TrixieBody.AddForce(Vector3.up * JumpImpulse, ForceMode.Impulse);
 		}
 	}
 }
