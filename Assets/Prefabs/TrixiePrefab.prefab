@@ -494,9 +494,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControlsBodyPart: 1
-  MovementForce: 10000
+  MovementForce: 20000
   HorizMovementAxis: {x: 0, y: 0, z: 1}
   VertMovementAxis: {x: -1, y: 0, z: 0}
+  MaxSpeed: 10
 --- !u!114 &114136662582840566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -509,9 +510,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControlsBodyPart: 0
-  MovementForce: 10000
+  MovementForce: 20000
   HorizMovementAxis: {x: 0, y: 0, z: 1}
   VertMovementAxis: {x: -1, y: 0, z: 0}
+  MaxSpeed: 10
 --- !u!114 &114599955700120092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -608,7 +610,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0.55}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: -0.4499998}
+  m_ConnectedAnchor: {x: 0, y: 0, z: -0.45000005}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
@@ -792,7 +794,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0.55}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: -0.4499998}
+  m_ConnectedAnchor: {x: 0, y: 0, z: -0.45000005}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 1
