@@ -498,6 +498,8 @@ MonoBehaviour:
   HorizMovementAxis: {x: 0, y: 0, z: 1}
   VertMovementAxis: {x: -1, y: 0, z: 0}
   MaxSpeed: 10
+  GroundCheckDist: 1.1
+  JumpImpulse: 50
 --- !u!114 &114136662582840566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -514,6 +516,8 @@ MonoBehaviour:
   HorizMovementAxis: {x: 0, y: 0, z: 1}
   VertMovementAxis: {x: -1, y: 0, z: 0}
   MaxSpeed: 10
+  GroundCheckDist: 1.1
+  JumpImpulse: 50
 --- !u!114 &114599955700120092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -526,6 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UprightForce: 200000
+  GroundCheckDist: 1.1
 --- !u!114 &114855987684901656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -538,6 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UprightForce: 200000
+  GroundCheckDist: 1.1
 --- !u!135 &135076091441670668
 SphereCollider:
   m_ObjectHideFlags: 1
