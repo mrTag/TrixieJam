@@ -59,6 +59,12 @@ ModelImporter:
     100102: teeth_upper
     100104: //RootNode
     100106: root
+    100108: Box001
+    100110: Box002
+    100112: Box003
+    100114: Box005
+    100116: Point001
+    100118: Point002
     400000: body
     400002: bone_belly1
     400004: bone_belly2
@@ -113,6 +119,12 @@ ModelImporter:
     400102: teeth_upper
     400104: //RootNode
     400106: root
+    400108: Box001
+    400110: Box002
+    400112: Box003
+    400114: Box005
+    400116: Point001
+    400118: Point002
     2300000: eyeL
     2300002: eyeR
     2300004: legFL
@@ -121,6 +133,10 @@ ModelImporter:
     2300010: legRR
     2300012: teeth_lower
     2300014: teeth_upper
+    2300016: Box001
+    2300018: Box002
+    2300020: Box003
+    2300022: Box005
     3300000: eyeL
     3300002: eyeR
     3300004: legFL
@@ -129,6 +145,10 @@ ModelImporter:
     3300010: legRR
     3300012: teeth_lower
     3300014: teeth_upper
+    3300016: Box001
+    3300018: Box002
+    3300020: Box003
+    3300022: Box005
     4300000: legFR
     4300002: body
     4300004: legFL
@@ -139,6 +159,13 @@ ModelImporter:
     4300014: teeth_upper
     4300016: eyeL
     4300018: eyeR
+    4300020: Box001
+    4300022: Box002
+    4300024: Box003
+    4300026: Box005
+    7400000: Bite
+    7400002: WalkFront
+    7400004: WalkBack
     9500000: //RootNode
     13700000: body
     13700002: tail
