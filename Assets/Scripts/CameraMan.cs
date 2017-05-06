@@ -32,6 +32,15 @@ public class CameraMan : MonoBehaviour
 		transform.DOMove(CameraPositions[mCurrentPosIndex].position, 1.5f).SetEase(Ease.InOutSine);
 	}
 
+	public void JumpToPos(int index)
+	{
+		if (index == mCurrentPosIndex) return;
+		mCurrentPosIndex = index;
+		mCurrentPosIndex = Mathf.Clamp(mCurrentPosIndex, 0, CameraPositions.Length - 1);
+		transform.DOKill();
+		transform.DOMove(CameraPositions[mCurrentPosIndex].position, 1.5f).SetEase(Ease.InOutSine);
+	}
+
 	#if UNITY_EDITOR
 	void Update ()
 	{
