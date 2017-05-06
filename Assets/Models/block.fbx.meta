@@ -1,33 +1,15 @@
 fileFormatVersion: 2
-guid: 054cd10dfe90ce148b5d2f80e3b22696
-timeCreated: 1494065123
+guid: 6f35856870060014cbba820a661e428d
+timeCreated: 1494089592
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Camera
-    100004: Cylinder_01
-    100006: Cylinder_02
-    100008: Gap_Tile
-    100010: Lamp
     400000: //RootNode
-    400002: Camera
-    400004: Cylinder_01
-    400006: Cylinder_02
-    400008: Gap_Tile
-    400010: Lamp
     2300000: //RootNode
-    2300002: Cylinder_01
-    2300004: Cylinder_02
-    2300006: Gap_Tile
     3300000: //RootNode
-    3300002: Cylinder_01
-    3300004: Cylinder_02
-    3300006: Gap_Tile
-    4300000: Cylinder_01
-    4300002: Cylinder_02
-    4300004: Gap_Tile
+    4300000: Cube
   materials:
     importMaterials: 1
     materialName: 0
