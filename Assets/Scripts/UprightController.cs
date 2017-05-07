@@ -20,7 +20,7 @@ public class UprightController : MonoBehaviour {
 		if(angleDiff != 0){
 			float springFactor = Mathf.InverseLerp(0, 90, angleDiff);
 			if(!onGround)
-				springFactor *= 0.1f;
+				springFactor *= 0.01f;
 			Vector3 torqueAxis = Vector3.Cross(Vector3.up, transform.up);			
 			rb.AddTorque(-springFactor * torqueAxis * UprightForce * Time.fixedDeltaTime, ForceMode.Force);
 		}
