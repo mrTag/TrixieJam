@@ -2566,10 +2566,10 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1601771648774566}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2581,10 +2581,10 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1285573643369312}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2611,10 +2611,10 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1234604471220552}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2644,7 +2644,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Controller: {fileID: 0}
-  m_CullingMode: 1
+  m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
@@ -2687,12 +2687,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControlsBodyPart: 1
-  MovementForce: 20000
+  MovementForce: 40000
   HorizMovementAxis: {x: 0, y: 0, z: 1}
   VertMovementAxis: {x: -1, y: 0, z: 0}
   MaxSpeed: 10
   GroundCheckDist: 1.1
-  JumpImpulse: 50
+  JumpImpulse: 70
 --- !u!114 &114136662582840566
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2705,12 +2705,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ControlsBodyPart: 0
-  MovementForce: 20000
+  MovementForce: 40000
   HorizMovementAxis: {x: 0, y: 0, z: 1}
   VertMovementAxis: {x: -1, y: 0, z: 0}
   MaxSpeed: 10
   GroundCheckDist: 1.1
-  JumpImpulse: 50
+  JumpImpulse: 70
 --- !u!114 &114216498457987426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2746,7 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2ae554c0912b647854323964875149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UprightForce: 200000
+  UprightForce: 300000
   GroundCheckDist: 1.1
 --- !u!114 &114855987684901656
 MonoBehaviour:
@@ -2759,7 +2759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2ae554c0912b647854323964875149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UprightForce: 200000
+  UprightForce: 300000
   GroundCheckDist: 1.1
 --- !u!114 &114984317759501042
 MonoBehaviour:
@@ -2895,7 +2895,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300004, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Bones:
@@ -2943,7 +2943,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300000, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Bones:
@@ -2991,7 +2991,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300010, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Bones:
@@ -3037,7 +3037,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300006, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Bones:
@@ -3085,7 +3085,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300002, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Bones:
@@ -3141,7 +3141,7 @@ SkinnedMeshRenderer:
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
-  m_UpdateWhenOffscreen: 0
+  m_UpdateWhenOffscreen: 1
   m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300008, guid: 91ac54bf9f89c614ca9609bd7e41f87f, type: 3}
   m_Bones:
