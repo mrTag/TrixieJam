@@ -7,51 +7,34 @@ public class CameraMan : MonoBehaviour
 {
 	public static CameraMan instance;
 
-	public Transform[] CameraPositions;
+	public Transform CameraStartPos;
+	public Transform CameraEndPos;
+	public Transform TrixieStartPos;
+	public Transform TrixieEndPos;
 
-	private int mCurrentPosIndex = 0;
+	private Transform _trixieFront;
+	private Transform _trixieBack;
+
+	public void RegisterTrixieTransform(Transform trixieFront, Transform trixieBack)
+	{
+		_trixieFront = trixieFront;
+		_trixieBack = trixieBack;
+	}
 
 	void Awake ()
 	{
 		instance = this;
 	}
-	
-	public void NextPos ()
-	{
-		mCurrentPosIndex++;
-		mCurrentPosIndex = Mathf.Clamp(mCurrentPosIndex, 0, CameraPositions.Length - 1);
-		transform.DOKill();
-		transform.DOMove(CameraPositions[mCurrentPosIndex].position, 1.5f).SetEase(Ease.InOutSine);
-	}
 
-	public void PreviousPos()
-	{
-		mCurrentPosIndex--;
-		mCurrentPosIndex = Mathf.Clamp(mCurrentPosIndex, 0, CameraPositions.Length - 1);
-		transform.DOKill();
-		transform.DOMove(CameraPositions[mCurrentPosIndex].position, 1.5f).SetEase(Ease.InOutSine);
-	}
-
-	public void JumpToPos(int index)
-	{
-		if (index == mCurrentPosIndex) return;
-		mCurrentPosIndex = index;
-		mCurrentPosIndex = Mathf.Clamp(mCurrentPosIndex, 0, CameraPositions.Length - 1);
-		transform.DOKill();
-		transform.DOMove(CameraPositions[mCurrentPosIndex].position, 1.5f).SetEase(Ease.InOutSine);
-	}
-
-	#if UNITY_EDITOR
 	void Update ()
 	{
-		if (Input.GetKeyDown(KeyCode.X))
+		if (_trixieFront != null && _trixieBack != null)
 		{
-			NextPos();
-		}
-		else if (Input.GetKeyDown(KeyCode.C))
-		{
-			PreviousPos();
+			float trixieZPos = Mathf.Lerp(_trixieFront.position.z, _trixieBack.position.z, .5f);
+			float factor = Mathf.InverseLerp(TrixieStartPos.position.z, TrixieEndPos.position.z, trixieZPos);
+			float camZPos = Mathf.Lerp(CameraStartPos.position.z, CameraEndPos.position.z, factor);
+			transform.position = new Vector3(transform.position.x, transform.position.y, camZPos);
 		}
 	}
-	#endif
+
 }
