@@ -6,10 +6,12 @@ using UnityEngine;
 public class BiteController : MonoBehaviour {
 
 	public LayerMask BiteLayerMask;
+	public Animator TrixieAnimator;
 	private bool currentlyBitten = false;
 	private HingeJoint biteJoint;
 	private GameObject parentGO;
 	private Rigidbody parentRB;
+	private AudioSource biteAudio;
 
 	bool biteDownLastFrame = false;
 
@@ -17,6 +19,7 @@ public class BiteController : MonoBehaviour {
 	void Start () {
 		parentGO = transform.parent.gameObject;
 		parentRB = parentGO.GetComponent<Rigidbody>();
+		biteAudio = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -29,6 +32,8 @@ public class BiteController : MonoBehaviour {
 			}
 		}
 		else if(biteDown && !biteDownLastFrame){
+			TrixieAnimator.SetBool("Bite", true);
+			biteAudio.Play();
 			var overlapBite = Physics.OverlapSphere(transform.position, 0.5f * transform.localScale.x, BiteLayerMask);
 			if(overlapBite.Length > 0){
 				if(biteJoint != null) Destroy(biteJoint);

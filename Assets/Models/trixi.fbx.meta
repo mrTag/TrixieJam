@@ -65,6 +65,8 @@ ModelImporter:
     100114: Box005
     100116: Point001
     100118: Point002
+    100120: earEndL
+    100122: earEndR
     400000: body
     400002: bone_belly1
     400004: bone_belly2
@@ -125,6 +127,8 @@ ModelImporter:
     400114: Box005
     400116: Point001
     400118: Point002
+    400120: earEndL
+    400122: earEndR
     2300000: eyeL
     2300002: eyeR
     2300004: legFL
