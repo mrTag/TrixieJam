@@ -59,6 +59,12 @@ ModelImporter:
     100102: teeth_upper
     100104: //RootNode
     100106: root
+    100108: Box001
+    100110: Box002
+    100112: Box003
+    100114: Box005
+    100116: Point001
+    100118: Point002
     400000: body
     400002: bone_belly1
     400004: bone_belly2
@@ -113,6 +119,12 @@ ModelImporter:
     400102: teeth_upper
     400104: //RootNode
     400106: root
+    400108: Box001
+    400110: Box002
+    400112: Box003
+    400114: Box005
+    400116: Point001
+    400118: Point002
     2300000: eyeL
     2300002: eyeR
     2300004: legFL
@@ -121,6 +133,10 @@ ModelImporter:
     2300010: legRR
     2300012: teeth_lower
     2300014: teeth_upper
+    2300016: Box001
+    2300018: Box002
+    2300020: Box003
+    2300022: Box005
     3300000: eyeL
     3300002: eyeR
     3300004: legFL
@@ -129,6 +145,10 @@ ModelImporter:
     3300010: legRR
     3300012: teeth_lower
     3300014: teeth_upper
+    3300016: Box001
+    3300018: Box002
+    3300020: Box003
+    3300022: Box005
     4300000: legFR
     4300002: body
     4300004: legFL
@@ -139,6 +159,17 @@ ModelImporter:
     4300014: teeth_upper
     4300016: eyeL
     4300018: eyeR
+    4300020: Box001
+    4300022: Box002
+    4300024: Box003
+    4300026: Box005
+    7400000: Bite
+    7400002: WalkFront
+    7400004: WalkBack
+    7400006: Stand
+    7400008: jump
+    7400010: Walk_Front
+    7400012: Walk_Back
     9500000: //RootNode
     13700000: body
     13700002: tail
@@ -168,7 +199,707 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Stand
+      takeName: Stand
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: legFL
+        weight: 1
+      - path: legFR
+        weight: 1
+      - path: legRL
+        weight: 1
+      - path: legRR
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/bone_belly1
+        weight: 1
+      - path: root/bone_belly2
+        weight: 1
+      - path: root/bone_belly3
+        weight: 1
+      - path: root/Circle001
+        weight: 1
+      - path: root/Circle001/hip_back
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL/legbone4_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR/legbone4_RR
+        weight: 1
+      - path: root/Circle001/hip_back/tailbone1
+        weight: 1
+      - path: root/Circle001/hip_back/tailbone1/tailbone2
+        weight: 1
+      - path: root/Circle001/IK_LeftFoot_Rear
+        weight: 1
+      - path: root/Circle001/IK_LeftFoot_Rear/IK Chain001
+        weight: 1
+      - path: root/Circle001/IK_RightFoot_Rear
+        weight: 1
+      - path: root/Circle001/IK_RightFoot_Rear/IK Chain002
+        weight: 1
+      - path: root/Circle002
+        weight: 1
+      - path: root/Circle002/hip_front
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL/legbone4_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR/legbone4_FR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/earL
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/earR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower/teeth_lower
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye/eyeL
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001/eyeR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/teeth_upper
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001/IK Chain004
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001/Point002
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001/IK Chain003
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001/Point001
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: jump
+      takeName: jump
+      firstFrame: 15
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: legFL
+        weight: 1
+      - path: legFR
+        weight: 1
+      - path: legRL
+        weight: 1
+      - path: legRR
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/bone_belly1
+        weight: 1
+      - path: root/bone_belly2
+        weight: 1
+      - path: root/bone_belly3
+        weight: 1
+      - path: root/Circle001
+        weight: 1
+      - path: root/Circle001/hip_back
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL/legbone4_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR/legbone4_RR
+        weight: 1
+      - path: root/Circle001/hip_back/tailbone1
+        weight: 1
+      - path: root/Circle001/hip_back/tailbone1/tailbone2
+        weight: 1
+      - path: root/Circle001/IK_LeftFoot_Rear
+        weight: 1
+      - path: root/Circle001/IK_LeftFoot_Rear/IK Chain001
+        weight: 1
+      - path: root/Circle001/IK_RightFoot_Rear
+        weight: 1
+      - path: root/Circle001/IK_RightFoot_Rear/IK Chain002
+        weight: 1
+      - path: root/Circle002
+        weight: 1
+      - path: root/Circle002/hip_front
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL/legbone4_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR/legbone4_FR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/earL
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/earR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower/teeth_lower
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye/eyeL
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001/eyeR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/teeth_upper
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001/IK Chain004
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001/Point002
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001/IK Chain003
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001/Point001
+        weight: 1
+      - path: tail
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bite
+      takeName: Bite
+      firstFrame: 30
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 0
+      - path: legFL
+        weight: 0
+      - path: legFR
+        weight: 0
+      - path: legRL
+        weight: 0
+      - path: legRR
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/bone_belly1
+        weight: 0
+      - path: root/bone_belly2
+        weight: 0
+      - path: root/bone_belly3
+        weight: 0
+      - path: root/Circle001
+        weight: 0
+      - path: root/Circle001/hip_back
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL/legbone4_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR/legbone4_RR
+        weight: 0
+      - path: root/Circle001/hip_back/tailbone1
+        weight: 0
+      - path: root/Circle001/hip_back/tailbone1/tailbone2
+        weight: 0
+      - path: root/Circle001/IK_LeftFoot_Rear
+        weight: 0
+      - path: root/Circle001/IK_LeftFoot_Rear/IK Chain001
+        weight: 0
+      - path: root/Circle001/IK_RightFoot_Rear
+        weight: 0
+      - path: root/Circle001/IK_RightFoot_Rear/IK Chain002
+        weight: 0
+      - path: root/Circle002
+        weight: 1
+      - path: root/Circle002/hip_front
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL/legbone4_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR/legbone4_FR
+        weight: 0
+      - path: root/Circle002/hip_front/neck1
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/earL
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/earR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower/teeth_lower
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye/eyeL
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001/eyeR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/teeth_upper
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001
+        weight: 0
+      - path: root/Circle002/IK_LeftFoot_Rear001/IK Chain004
+        weight: 0
+      - path: root/Circle002/IK_LeftFoot_Rear001/Point002
+        weight: 0
+      - path: root/Circle002/IK_RightFoot_Rear001
+        weight: 0
+      - path: root/Circle002/IK_RightFoot_Rear001/IK Chain003
+        weight: 0
+      - path: root/Circle002/IK_RightFoot_Rear001/Point001
+        weight: 0
+      - path: tail
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk_Front
+      takeName: Walk_Front
+      firstFrame: 50
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 0
+      - path: legFL
+        weight: 0
+      - path: legFR
+        weight: 0
+      - path: legRL
+        weight: 0
+      - path: legRR
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/bone_belly1
+        weight: 0
+      - path: root/bone_belly2
+        weight: 0
+      - path: root/bone_belly3
+        weight: 0
+      - path: root/Circle001
+        weight: 0
+      - path: root/Circle001/hip_back
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL/legbone4_RL
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR
+        weight: 0
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR/legbone4_RR
+        weight: 0
+      - path: root/Circle001/hip_back/tailbone1
+        weight: 0
+      - path: root/Circle001/hip_back/tailbone1/tailbone2
+        weight: 0
+      - path: root/Circle001/IK_LeftFoot_Rear
+        weight: 0
+      - path: root/Circle001/IK_LeftFoot_Rear/IK Chain001
+        weight: 0
+      - path: root/Circle001/IK_RightFoot_Rear
+        weight: 0
+      - path: root/Circle001/IK_RightFoot_Rear/IK Chain002
+        weight: 0
+      - path: root/Circle002
+        weight: 1
+      - path: root/Circle002/hip_front
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL/legbone4_FL
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR
+        weight: 1
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR/legbone4_FR
+        weight: 1
+      - path: root/Circle002/hip_front/neck1
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2
+        weight: 1
+      - path: root/Circle002/hip_front/neck1/neck2/head
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/earL
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/earR
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower/teeth_lower
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye/eyeL
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001/eyeR
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/teeth_upper
+        weight: 0
+      - path: root/Circle002/IK_LeftFoot_Rear001
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001/IK Chain004
+        weight: 1
+      - path: root/Circle002/IK_LeftFoot_Rear001/Point002
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001/IK Chain003
+        weight: 1
+      - path: root/Circle002/IK_RightFoot_Rear001/Point001
+        weight: 1
+      - path: tail
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk_Back
+      takeName: Walk_Back
+      firstFrame: 80
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 0
+      - path: legFL
+        weight: 0
+      - path: legFR
+        weight: 0
+      - path: legRL
+        weight: 0
+      - path: legRR
+        weight: 0
+      - path: root
+        weight: 1
+      - path: root/bone_belly1
+        weight: 0
+      - path: root/bone_belly2
+        weight: 0
+      - path: root/bone_belly3
+        weight: 0
+      - path: root/Circle001
+        weight: 1
+      - path: root/Circle001/hip_back
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RL/legbone2_RL/legbone3_RL/legbone4_RL
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR
+        weight: 1
+      - path: root/Circle001/hip_back/legbone1_RR/legbone2_RR/legbone3_RR/legbone4_RR
+        weight: 1
+      - path: root/Circle001/hip_back/tailbone1
+        weight: 0
+      - path: root/Circle001/hip_back/tailbone1/tailbone2
+        weight: 0
+      - path: root/Circle001/IK_LeftFoot_Rear
+        weight: 0
+      - path: root/Circle001/IK_LeftFoot_Rear/IK Chain001
+        weight: 0
+      - path: root/Circle001/IK_RightFoot_Rear
+        weight: 0
+      - path: root/Circle001/IK_RightFoot_Rear/IK Chain002
+        weight: 0
+      - path: root/Circle002
+        weight: 0
+      - path: root/Circle002/hip_front
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FL/legbone2_FL/legbone3_FL/legbone4_FL
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR
+        weight: 0
+      - path: root/Circle002/hip_front/legbone1_FR/legbone2_FR/legbone3_FR/legbone4_FR
+        weight: 0
+      - path: root/Circle002/hip_front/neck1
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/earL
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/earR
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_lower/teeth_lower
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye/eyeL
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/Eye001/eyeR
+        weight: 0
+      - path: root/Circle002/hip_front/neck1/neck2/head/jaw_upper/teeth_upper
+        weight: 0
+      - path: root/Circle002/IK_LeftFoot_Rear001
+        weight: 0
+      - path: root/Circle002/IK_LeftFoot_Rear001/IK Chain004
+        weight: 0
+      - path: root/Circle002/IK_LeftFoot_Rear001/Point002
+        weight: 0
+      - path: root/Circle002/IK_RightFoot_Rear001
+        weight: 0
+      - path: root/Circle002/IK_RightFoot_Rear001/IK Chain003
+        weight: 0
+      - path: root/Circle002/IK_RightFoot_Rear001/Point001
+        weight: 0
+      - path: tail
+        weight: 0
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
