@@ -1,10 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class EndingScript : MonoBehaviour {
 
+	public GameObject TrixieObj;
+	public Transform Foot;
+	private AudioSource _audio; 
+
 	int _controllersInTrigger = 0;
+
+	void Awake()
+	{
+		_audio = GetComponent<AudioSource>();
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -30,6 +40,10 @@ public class EndingScript : MonoBehaviour {
 		if (_controllersInTrigger >= 2)
 		{
 			Debug.Log("END");
+			Foot.DOMoveY(0f, .3f).OnComplete(() => {
+				_audio.Play();
+				TrixieObj.SetActive(false);
+			});
 		}
 	}
 }

@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 	public GameObject TrixiePrefab;
 	public Transform TrixieSpawn;
 	public Transform CameraTransform;
+	public EndingScript Ending;
 
 	void Start()
 	{
@@ -20,5 +21,6 @@ public class GameManager : MonoBehaviour
 			ctrlrs[i].VertMovementAxis = camForwardProjected;
 			ctrlrs[i].HorizMovementAxis = camRightProjected;
 		}
+		Ending.TrixieObj = trixie;
 	}
 }
