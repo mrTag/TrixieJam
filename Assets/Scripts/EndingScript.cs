@@ -7,6 +7,7 @@ public class EndingScript : MonoBehaviour {
 
 	public GameObject TrixieObj;
 	public Transform Foot;
+	public Transform EndingText;
 	public AudioSource Music;
 	private AudioSource _audio; 
 
@@ -45,6 +46,7 @@ public class EndingScript : MonoBehaviour {
 				_audio.Play();
 				Music.Stop();
 				TrixieObj.SetActive(false);
+				EndingText.DOMoveY(7f, .5f).SetDelay(1f).SetEase(Ease.OutBounce);
 			});
 		}
 	}
