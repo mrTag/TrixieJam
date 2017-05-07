@@ -7,6 +7,7 @@ public class EndingScript : MonoBehaviour {
 
 	public GameObject TrixieObj;
 	public Transform Foot;
+	public AudioSource Music;
 	private AudioSource _audio; 
 
 	int _controllersInTrigger = 0;
@@ -42,6 +43,7 @@ public class EndingScript : MonoBehaviour {
 			Debug.Log("END");
 			Foot.DOMoveY(0f, .3f).OnComplete(() => {
 				_audio.Play();
+				Music.Stop();
 				TrixieObj.SetActive(false);
 			});
 		}
