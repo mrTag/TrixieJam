@@ -15,12 +15,15 @@ public class Wobbler : MonoBehaviour {
 	private Vector2 currentWobbelPosition;
 	private float wobbelPositionToAngleFactor;
 	private float wobbleRadius;
+	private Vector3 localOrientationStartOffset;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		lastFrameWorldPosition = transform.position;
 		wobbelPositionToAngleFactor = Mathf.Deg2Rad * MaxAngle;
-		wobbleRadius = transform.localPosition.magnitude;
+		wobbleRadius = WobbelTarget.localPosition.magnitude;
+		localOrientationStartOffset = WobbelTarget.localEulerAngles;
+		Debug.Log("wobbleRadius: "+wobbleRadius);
 	}
 	
 	// Update is called once per frame
@@ -47,7 +50,7 @@ public class Wobbler : MonoBehaviour {
 			wobbleRadius * Mathf.Sin(currentWobbelPosition.y * wobbelPositionToAngleFactor),
 			wobbleRadius * Mathf.Cos(currentWobbelPosition.x * wobbelPositionToAngleFactor) * Mathf.Cos(currentWobbelPosition.y * wobbelPositionToAngleFactor));
 		WobbelTarget.transform.localPosition = localTargetPosition;
-		WobbelTarget.localEulerAngles = new Vector3(-Mathf.Rad2Deg * Mathf.Sin(currentWobbelPosition.y * wobbelPositionToAngleFactor), Mathf.Rad2Deg * Mathf.Sin(currentWobbelPosition.x * wobbelPositionToAngleFactor), 0);
+		WobbelTarget.localEulerAngles = localOrientationStartOffset + new Vector3(Mathf.Rad2Deg * Mathf.Sin(currentWobbelPosition.y * wobbelPositionToAngleFactor), Mathf.Rad2Deg * Mathf.Sin(currentWobbelPosition.x * wobbelPositionToAngleFactor), 0);
 
 		lastFrameWorldPosition = transform.position;
 		lastFrameVelocity = velocity;
