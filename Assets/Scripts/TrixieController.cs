@@ -17,6 +17,7 @@ public class TrixieController : MonoBehaviour {
 	public float MaxSpeed;
 	public float GroundCheckDist = 2.5f;
 	public float JumpImpulse = 1000;
+	public Animator TrixieAnimator;
 
 	private bool onGround = false;
 	public bool OnGround { get { return onGround; } }
@@ -25,6 +26,7 @@ public class TrixieController : MonoBehaviour {
 	private string HorizontalInputAxis;
 	private string VerticalInputAxis;
 	private string JumpButton;
+	private int WalkAnimParameter;
 
 	// Use this for initialization
 	void Start () {
@@ -33,11 +35,13 @@ public class TrixieController : MonoBehaviour {
 			HorizontalInputAxis = "HorizontalFront";
 			VerticalInputAxis = "VerticalFront";
 			JumpButton = "JumpFront";
+			WalkAnimParameter = Animator.StringToHash("SpeedFront");
 		}
 		else {
 			HorizontalInputAxis = "HorizontalBack";
 			VerticalInputAxis = "VerticalBack";
 			JumpButton = "JumpBack";
+			WalkAnimParameter = Animator.StringToHash("SpeedBack");
 		}
 		HorizMovementAxis.Normalize();
 		VertMovementAxis.Normalize();
@@ -73,5 +77,8 @@ public class TrixieController : MonoBehaviour {
 		if(onGround && Input.GetButtonDown(JumpButton)){
 			TrixieBody.AddForce(Vector3.up * JumpImpulse, ForceMode.Impulse);
 		}
+
+		float speedParam = Mathf.InverseLerp(0, MaxSpeed, TrixieBody.velocity.magnitude);
+		TrixieAnimator.SetFloat(WalkAnimParameter, onGround ? speedParam : 0);
 	}
 }
